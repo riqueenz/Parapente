@@ -1,0 +1,26 @@
+[2023-10-19T19:13:38Z] Loading language file
+[2023-10-19T19:13:38Z] Language: GetUserDefaultUILanguage()=0x409
+[2023-10-19T19:13:38Z] Loading input events file
+[2023-10-19T19:13:38Z] Loading Topography File...
+[2023-10-19T19:13:38Z] ReadWaypoints
+[2023-10-19T19:13:38Z] Failed to read waypoint file: C
+[2023-10-19T19:13:38Z] Failed to open C:\users\hidraumak\Documents\XCSoarData\user.cup: File not found.
+: No such file or directory
+[2023-10-19T19:13:38Z] RASP load
+[2023-10-19T19:13:38Z] No rasp data file: Failed to open ZIP archive C:\users\hidraumak\Documents\XCSoarData\xcsoar-rasp.dat
+[2023-10-19T19:13:38Z] ReadAirspace
+[2023-10-19T19:13:38Z] Register serial devices
+[2023-10-19T19:13:38Z] ProgramStarted
+[2023-10-19T19:13:38Z] cannot open C:\users\hidraumak\Documents\XCSoarData\lua\init.lua: No such file or directory
+[2023-10-19T19:13:39Z] Opening device 
+[2023-10-19T19:13:39Z] : No port path configured
+[2023-10-19T19:13:43Z] Entering shutdown...
+[2023-10-19T19:13:43Z] Stop COM devices
+[2023-10-19T19:13:43Z] Stop threads
+[2023-10-19T19:13:43Z] Waiting for calculation thread
+[2023-10-19T19:13:43Z] Waiting for draw thread
+[2023-10-19T19:13:43Z] delete MapWindow
+[2023-10-19T19:13:43Z] Save default task
+[2023-10-19T19:13:43Z] Close Progress Dialog
+[2023-10-19T19:13:43Z] Close Windows - main
+[2023-10-19T19:13:43Z] Finished shutdown
