@@ -1,0 +1,20 @@
+<Task pev_start_window="0" pev_start_wait_time="0" fai_finish="0" finish_min_height_ref="AGL" finish_min_height="0" start_close_time="12:50" start_open_time="12:01" start_max_height_ref="AGL" start_max_height="2200" start_max_speed="83" start_score_exit="1" start_requires_arm="0" aat_min_time="10800" type="RT">
+	<Point type="Start">
+		<Waypoint altitude="265" comment="" id="27" name="Coqueirinho">
+			<Location latitude="-29" longitude="-50"/>
+		</Waypoint>
+		<ObservationZone radius="1000" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="668" comment="" id="25" name="Livramento">
+			<Location latitude="-29.7596" longitude="-50.2565"/>
+		</Waypoint>
+		<ObservationZone radius="4000" type="Cylinder"/>
+	</Point>
+	<Point type="Finish">
+		<Waypoint altitude="1" comment="" id="1" name="Aeroporto Capao ">
+			<Location latitude="-29.7628" longitude="-50.0356"/>
+		</Waypoint>
+		<ObservationZone radius="1500" type="Cylinder"/>
+	</Point>
+</Task>

@@ -1,0 +1,26 @@
+<Task pev_start_window="0" pev_start_wait_time="0" fai_finish="0" finish_min_height_ref="AGL" finish_min_height="0" start_close_time="12:50" start_open_time="12:10" start_max_height_ref="AGL" start_max_height="2200" start_max_speed="83,3333" start_score_exit="1" start_requires_arm="0" aat_min_time="10800" type="RT">
+	<Point type="Start">
+		<Waypoint altitude="265" comment="" id="26" name="Coqueirinho">
+			<Location latitude="-29,8745" longitude="-50,2666"/>
+		</Waypoint>
+		<ObservationZone radius="1000" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="178" comment="" id="8" name="Caraa">
+			<Location latitude="-29,8" longitude="-50,3001"/>
+		</Waypoint>
+		<ObservationZone radius="500" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="8" comment="" id="3" name="Agasa">
+			<Location latitude="-29,8776" longitude="-50,4006"/>
+		</Waypoint>
+		<ObservationZone radius="500" type="Cylinder"/>
+	</Point>
+	<Point type="Finish">
+		<Waypoint altitude="13" comment="" id="10" name="Trevo RS 389">
+			<Location latitude="-29,9125" longitude="-50,2695"/>
+		</Waypoint>
+		<ObservationZone radius="1000" type="Cylinder"/>
+	</Point>
+</Task>
