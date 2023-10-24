@@ -1,0 +1,44 @@
+<Task pev_start_window="0" pev_start_wait_time="0" fai_finish="0" finish_min_height_ref="AGL" finish_min_height="0" start_close_time="17:30" start_open_time="16:30" start_max_height_ref="MSL" start_max_height="1500" start_max_speed="16.6667" start_score_exit="1" start_requires_arm="0" aat_min_time="10800" type="RT">
+	<Point type="Start">
+		<Waypoint altitude="110" comment="POUSO_SUDEST_FIG" id="5" name="A05011">
+			<Location latitude="-29.7111" longitude="-53.2013"/>
+		</Waypoint>
+		<ObservationZone radius="1000" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="538" comment="PONTO_ALTO" id="22" name="A22054">
+			<Location latitude="-29.6357" longitude="-53.1635"/>
+		</Waypoint>
+		<ObservationZone radius="1500" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="43" comment="VILA_PARAISO" id="16" name="A16004">
+			<Location latitude="-29.7332" longitude="-53.1804"/>
+		</Waypoint>
+		<ObservationZone radius="3000" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="538" comment="PONTO_ALTO" id="22" name="A22054">
+			<Location latitude="-29.6357" longitude="-53.1635"/>
+		</Waypoint>
+		<ObservationZone radius="1500" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="66" comment="IGREJA_1" id="18" name="A18007">
+			<Location latitude="-29.7571" longitude="-53.2277"/>
+		</Waypoint>
+		<ObservationZone radius="5000" type="Cylinder"/>
+	</Point>
+	<Point type="Turn">
+		<Waypoint altitude="469" comment="RAMPA_SUL" id="4" name="A04047">
+			<Location latitude="-29.6163" longitude="-53.2492"/>
+		</Waypoint>
+		<ObservationZone radius="1000" type="Cylinder"/>
+	</Point>
+	<Point type="Finish">
+		<Waypoint altitude="77" comment="POUSO_SUL" id="7" name="A07008">
+			<Location latitude="-29.6387" longitude="-53.243"/>
+		</Waypoint>
+		<ObservationZone radius="400" type="Cylinder"/>
+	</Point>
+</Task>
