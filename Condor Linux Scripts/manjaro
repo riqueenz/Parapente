@@ -1,0 +1,28 @@
+if ! command -v socat
+then
+    clear
+    echo "Instalando socat"
+    sudo apt update
+    sudo apt install -y socat
+fi
+if ! command -v xclip
+then
+    clear
+    echo "Instalando xclip"
+    sudo apt update
+    sudo apt install -y xclip
+fi
+clear
+echo "Aperte uma tecla para continuar a configuração"
+read tecla
+cd ..
+PASTA=$(pwd)
+clear
+echo "Configurando portas seriais"
+wine regedit /s $PASTA/Condor/SerialComm.reg
+cp $PASTA/Condor/XCSoarData "$HOME/.wine/drive_c/users/$USER/My Documents/XCSoarData"
+echo "Configurando XCSoar"
+echo "111-YHL0-53NI" | xclip -selection clipboard
+wine regedit /s $PASTA/Condor/SerialComm.reg
+socat PTY,link=$HOME/.wine/dosdevices/com6 PTY,link=$HOME/.wine/dosdevices/com7&wine Condor/Condor.exe&wine Condor/XCSoar.exe
+rm -rf $HOME/.wine
