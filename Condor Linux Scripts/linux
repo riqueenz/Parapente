@@ -1,3 +1,5 @@
+#!/bin/bash
+'''
 if ! command -v socat
 then
     clear
@@ -12,17 +14,15 @@ then
     sudo apt update
     sudo apt install -y xclip
 fi
+'''
 clear
-echo "Aperte uma tecla para continuar a configuração"
-read tecla
-cd ..
-PASTA=$(pwd)
-clear
-echo "Configurando portas seriais"
-./Wine.AppImage regedit /s $PASTA/Condor/SerialComm.reg
-cp $PASTA/Condor/XCSoarData "$HOME/.wine32/drive_c/users/$USER/My Documents/XCSoarData"
+PASTA_DO_CONDOR=$(pwd)
+PREFIXO_DO_WINE="$PASTA_DO_CONDOR/wineprefix"
+#PREFIXO_DO_WINE="$HOME/.wine32"
 echo "Configurando XCSoar"
+WINEPREFIX=$PREFIXO_DO_WINE ./wine.AppImage regedit /s $PASTA_DO_CONDOR/SerialComm.reg
 echo "111-YHL0-53NI" | xclip -selection clipboard
-./Wine.AppImage regedit /s $PASTA/Condor/SerialComm.reg
-socat PTY,link=$HOME/.wine32/dosdevices/com6 PTY,link=$HOME/.wine32/dosdevices/com7&./Wine.AppImage Condor/Condor.exe&./Wine.AppImage Condor/XCSoar.exe
-rm -rf $HOME/.wine32
+WINEPREFIX=$PREFIXO_DO_WINE ./wine.AppImage regedit /s $PASTA_DO_CONDOR/SerialComm.reg
+socat PTY,link=$PREFIXO_DO_WINE/dosdevices/com6 PTY,link=$PREFIXO_DO_WINE/dosdevices/com7&WINEPREFIX=$PREFIXO_DO_WINE ./wine.AppImage $PASTA_DO_CONDOR/Condor.exe&WINEPREFIX=$PREFIXO_DO_WINE ./wine.AppImage $PASTA_DO_CONDOR/XCSoar.exe
+#socat PTY,link=$PREFIXO_DO_WINE/dosdevices/com6 PTY,link=$PREFIXO_DO_WINE/dosdevices/com7&./wine.AppImage $PASTA_DO_CONDOR/Condor.exe&./wine.AppImage $PASTA_DO_CONDOR/XCSoar.exe
+rm -rf $PREFIXO_DO_WINE
